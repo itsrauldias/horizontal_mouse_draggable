@@ -6,8 +6,13 @@ body{
 .container{
   width:500px;
   border:1px solid blue;
-  overflow-x: hidden; 
-  float:left;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.container::-webkit-scrollbar{
+  display: none;
 }
 
 .child{
